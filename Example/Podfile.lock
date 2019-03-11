@@ -1,0 +1,36 @@
+PODS:
+  - RxAtomic (4.4.1)
+  - RxCocoa (4.4.1):
+    - RxSwift (~> 4.0)
+  - RxStatusProvider (0.1.0):
+    - RxCocoa (~> 4.4.1)
+    - RxSwift (~> 4.4.1)
+    - StatusProvider (~> 1.2.10)
+  - RxSwift (4.4.1):
+    - RxAtomic (~> 4.4)
+  - StatusProvider (1.2.10)
+
+DEPENDENCIES:
+  - RxStatusProvider (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
+    - StatusProvider
+
+EXTERNAL SOURCES:
+  RxStatusProvider:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxStatusProvider: 92cb2c39d5a5406f085d1059ad59a8f12f8c1611
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  StatusProvider: 53f64deb452d619091b1a606a0973a724db17d0d
+
+PODFILE CHECKSUM: e8e5f2a60777dd35f99035fcebeb5787538f1c1e
+
+COCOAPODS: 1.6.1
