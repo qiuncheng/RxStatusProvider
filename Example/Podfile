@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RxStatusProvider_Example' do
+  pod 'RxStatusProvider', :path => '../'
+
+  target 'RxStatusProvider_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
