@@ -35,7 +35,7 @@ extension RxStatus: ReactiveCompatible { }
 
 public extension Reactive where Base: RxStatus {
     
-    public var action: Driver<Void> {
+    var action: Driver<Void> {
         let observable = Observable<Void>.create({ [weak base] (observer) -> Disposable in
             guard let aBase = base else {
                 observer.onCompleted()
@@ -53,7 +53,7 @@ public extension Reactive where Base: RxStatus {
 }
 
 public extension Reactive where Base: StatusController, Base: UIViewController {
-    public var status: Binder<RxStatus?> {
+    var status: Binder<RxStatus?> {
         return Binder<RxStatus?>(base) { (base, status) in
             if let status = status {
                 base.show(status: status)
